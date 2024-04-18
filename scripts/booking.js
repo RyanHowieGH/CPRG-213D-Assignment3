@@ -69,10 +69,12 @@ function clear() {
   }
   if (!fullRateButton.classList.contains("clicked")) {
     fullRateButton.classList.add("clicked");
-  } else if (halfRateButton.classList.contains("clicked")) {
+  }
+  if (halfRateButton.classList.contains("clicked")) {
     halfRateButton.classList.remove("clicked");
   }
   days_selected = 0;
+  cost_per_day = 35;
   calculate_cost();
 }
 
